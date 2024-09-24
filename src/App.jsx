@@ -5,10 +5,11 @@ function App() {
   return (
     <>
     <div>
-      <h1 className='text-center'>Run Code</h1>
+     <p className='text-3xl'>Kaif</p>
     </div>
     </>
   )
 }
+
 
 export default App
