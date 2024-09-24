@@ -4,7 +4,9 @@ function App() {
 
   return (
     <>
-      <h1>Run Code....</h1>
+    <div>
+      <h1 className='text-center'>Run Code</h1>
+    </div>
     </>
   )
 }
