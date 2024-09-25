@@ -8,17 +8,17 @@ function App() {
     setValue(value + val);
   };
 
-  const handleDelete = () =>{
-    setValue(value.slice(0 , -1))
+  const handleDelete = () => {
+    setValue(value.slice(0, -1))
   }
 
-  const handleDeleteAll = () =>{
+  const handleDeleteAll = () => {
     setValue("")
   }
 
-  // const handleCalculate = () =>{
-  //   setValue(eval(value))
-  // }
+  const handleCalculate = () => {
+    setValue(eval(value))
+  }
 
 
   return (
@@ -35,33 +35,52 @@ function App() {
         </div>
         <br />
         <div className='flex justify-center gap-1 mb-2'>
-          <button className='p-4 bg-gray-400 border border-black text-black rounded-lg w-20 text-xl font-semibold' onClick={handleDeleteAll}>AC</button>
-          <button className='p-4 bg-gray-400 border border-black text-black rounded-lg w-20 text-xl font-semibold' onClick={handleDelete}>DE</button>
-          <button className='p-4 bg-gray-400 border border-black text-black rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('.')}>.</button>
-          <button className='p-4 bg-gray-400 border border-black text-black rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('/')}>/</button>
+          <button className='p-4 bg-gray-400 border border-black text-black
+           rounded-lg w-20 text-xl font-semibold' onClick={handleDeleteAll}>AC</button>
+          <button className='p-4 bg-gray-400 border border-black text-black
+           rounded-lg w-20 text-xl font-semibold' onClick={handleDelete}>DE</button>
+          <button className='p-4 bg-gray-400 border border-black text-black
+           rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('.')}>.</button>
+          <button className='p-4 bg-gray-400 border border-black text-black
+           rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('/')}>/</button>
         </div>
         <div className='flex justify-center gap-1 mb-2'>
-          <button className='p-4 bg-gray-400 border border-black text-black rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('7')}>7</button>
-          <button className='p-4 bg-gray-400 border border-black text-black rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('8')}>8</button>
-          <button className='p-4 bg-gray-400 border border-black text-black rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('9')}>9</button>
-          <button className='p-4 bg-gray-400 border border-black text-black rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('*')}>*</button>
+          <button className='p-4 bg-gray-400 border border-black text-black
+           rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('7')}>7</button>
+          <button className='p-4 bg-gray-400 border border-black text-black
+           rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('8')}>8</button>
+          <button className='p-4 bg-gray-400 border border-black text-black
+           rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('9')}>9</button>
+          <button className='p-4 bg-gray-400 border border-black text-black
+           rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('*')}>*</button>
         </div>
         <div className='flex justify-center gap-1 mb-2'>
-          <button className='p-4 bg-gray-400 border border-black text-black rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('4')}>4</button>
-          <button className='p-4 bg-gray-400 border border-black text-black rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('5')}>5</button>
-          <button className='p-4 bg-gray-400 border border-black text-black rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('6')}>6</button>
-          <button className='p-4 bg-gray-400 border border-black text-black rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('+')}>+</button>
+          <button className='p-4 bg-gray-400 border border-black text-black 
+          rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('4')}>4</button>
+          <button className='p-4 bg-gray-400 border border-black text-black
+           rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('5')}>5</button>
+          <button className='p-4 bg-gray-400 border border-black text-black
+           rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('6')}>6</button>
+          <button className='p-4 bg-gray-400 border border-black text-black
+           rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('+')}>+</button>
         </div>
         <div className='flex justify-center gap-1 mb-2'>
-          <button className='p-4 bg-gray-400 border border-black text-black rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('1')}>1</button>
-          <button className='p-4 bg-gray-400 border border-black text-black rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('2')}>2</button>
-          <button className='p-4 bg-gray-400 border border-black text-black rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('3')}>3</button>
-          <button className='p-4 bg-gray-400 border border-black text-black rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('-')}>-</button>
+          <button className='p-4 bg-gray-400 border border-black text-black
+           rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('1')}>1</button>
+          <button className='p-4 bg-gray-400 border border-black text-black
+           rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('2')}>2</button>
+          <button className='p-4 bg-gray-400 border border-black text-black
+           rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('3')}>3</button>
+          <button className='p-4 bg-gray-400 border border-black text-black
+           rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('-')}>-</button>
         </div>
         <div className='flex justify-center gap-1 mb-2'>
-          <button className='p-4 bg-gray-400 border border-black text-black rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('00')}>00</button>
-          <button className='p-4 bg-gray-400 border border-black text-black rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('0')}>0</button>
-          <button className='p-4 bg-gray-800 border border-black text-white rounded-lg w-40 text-xl font-semibold' onClick={handleCalculate}>=</button>
+          <button className='p-4 bg-gray-400 border border-black text-black
+           rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('00')}>00</button>
+          <button className='p-4 bg-gray-400 border border-black text-black
+           rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('0')}>0</button>
+          <button className='p-4 bg-gray-800 border border-black text-white
+           rounded-lg w-40 text-xl font-semibold' onClick={handleCalculate}>=</button>
         </div>
       </div>
     </>
