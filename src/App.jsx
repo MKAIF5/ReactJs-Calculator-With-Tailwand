@@ -12,9 +12,9 @@ function App() {
     setValue(value.slice(0 , -1))
   }
 
-  // const handleDeleteAll = () =>{
-  //   setValue("")
-  // }
+  const handleDeleteAll = () =>{
+    setValue("")
+  }
 
   // const handleCalculate = () =>{
   //   setValue(eval(value))
