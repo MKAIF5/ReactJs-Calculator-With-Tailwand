@@ -8,6 +8,18 @@ function App() {
     setValue(value + val);
   };
 
+  const handleDelete = () =>{
+    setValue(value.slice(0 , -1))
+  }
+
+  // const handleDeleteAll = () =>{
+  //   setValue("")
+  // }
+
+  // const handleCalculate = () =>{
+  //   setValue(eval(value))
+  // }
+
 
   return (
     <>
@@ -23,8 +35,8 @@ function App() {
         </div>
         <br />
         <div className='flex justify-center gap-1 mb-2'>
-          <button className='p-4 bg-gray-400 border border-black text-black rounded-lg w-20 text-xl font-semibold'>AC</button>
-          <button className='p-4 bg-gray-400 border border-black text-black rounded-lg w-20 text-xl font-semibold'>DE</button>
+          <button className='p-4 bg-gray-400 border border-black text-black rounded-lg w-20 text-xl font-semibold' onClick={handleDeleteAll}>AC</button>
+          <button className='p-4 bg-gray-400 border border-black text-black rounded-lg w-20 text-xl font-semibold' onClick={handleDelete}>DE</button>
           <button className='p-4 bg-gray-400 border border-black text-black rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('.')}>.</button>
           <button className='p-4 bg-gray-400 border border-black text-black rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('/')}>/</button>
         </div>
@@ -49,7 +61,7 @@ function App() {
         <div className='flex justify-center gap-1 mb-2'>
           <button className='p-4 bg-gray-400 border border-black text-black rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('00')}>00</button>
           <button className='p-4 bg-gray-400 border border-black text-black rounded-lg w-20 text-xl font-semibold' onClick={() => handleButtonClick('0')}>0</button>
-          <button className='p-4 bg-gray-800 border border-black text-white rounded-lg w-40 text-xl font-semibold'>=</button>
+          <button className='p-4 bg-gray-800 border border-black text-white rounded-lg w-40 text-xl font-semibold' onClick={handleCalculate}>=</button>
         </div>
       </div>
     </>
